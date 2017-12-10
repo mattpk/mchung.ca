@@ -1,0 +1,115 @@
+body {
+  background-color: #F5F5F5;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url('/images/graphpaperwhite.png');
+  color: #2C3E50;
+  margin: 0px;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#links {
+  padding-left: 30px; 
+}
+
+#links a {
+  color: #31D0D6;
+  text-decoration: none;
+  padding: 8px 0px;
+}
+
+#links a:hover {
+  color: #FAB335;
+}
+
+#links ul li {
+  padding: 0;
+  list-style-type: none;
+  text-align: right;
+}
+
+span#name {
+  font-family: 'Fjalla One', serif;
+  font-size: 18px;
+}
+
+span.code {
+  font-family:Consolas,Monaco,Courier New, monospace;
+}
+
+#parent {
+  margin-top: 30px;
+  display: flex;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#content {
+  flex: 1;
+  padding: 30px 50px;
+  clear: left;
+}
+
+.content-block {
+  display: none;
+}
+
+@media (min-width: 600px) {
+
+  #links {
+    display: block;
+    text-align: right;
+  }
+
+  #links a {
+    width: 90px;
+    display: block;
+    border: none;
+  }
+  #links ul li {
+    padding-bottom: 20px;
+  }
+
+  #fade-list li {
+    opacity: 0;
+    animation: fadeseq .8s forwards;
+  }
+  #fade-list li:nth-child(1) {
+    animation-delay: .1s;
+  }
+  #fade-list li:nth-child(2) {
+    animation-delay: .4s;
+  }
+  #fade-list li:nth-child(3) {
+    animation-delay: .7s;
+  }
+  #fade-list li:nth-child(4) {
+    animation-delay: 1s;
+  }
+  #fade-list li:nth-child(5) {
+    animation-delay: 1.3s;
+  }
+  #fade-list li:nth-child(6) {
+    animation-delay: 1.6s;
+  }
+}
+
+/* Sequential Fade In */
+@keyframes fadeseq { 
+  100% { opacity: 1; }
+}
