@@ -3,20 +3,21 @@ html {
 }
 
 body {
-  font-family: system-ui, sans-serif;
+  font-family: Verdana, Tahoma, sans-serif;
   margin: 0;
   padding: 0 1rem;
-  background: #faf9f6;
+  background: #faf9f6 url('graphpaperwhite.png') repeat;
   color: #222;
-  max-width: 700px;
+  max-width: 720px;
   margin: 0 auto;
+  padding-bottom: 4rem;
   line-height: 1.6;
   overflow-wrap: break-word;
 }
 
 h1 {
   font-size: 2.2rem;
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 0.5rem; */
 }
 
 header a {
