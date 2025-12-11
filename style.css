@@ -17,21 +17,32 @@ body {
 
 h1 {
   font-size: 2.2rem;
-  /* margin-bottom: 0.5rem; */
 }
 
 header a {
   color: inherit;
-  text-decoration: none;
 }
 
-ul {
+ul.index a {
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #2a7ae2;
+}
+
+a:hover {
+  color: #174ea6;
+}
+
+ul.index {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-li {
+ul.index li {
   margin-bottom: 1.2rem;
   display: flex;
   flex-direction: column;
@@ -39,19 +50,17 @@ li {
   gap: 0.2rem;
 }
 
+ul {
+  padding-left: 1.8rem;
+}
+
+li {
+  padding-left: 0.3rem;
+}
+
 .post-date {
   font-size: 0.95rem;
   color: #888;
-}
-
-a {
-  text-decoration: none;
-  color: #2a7ae2;
-  font-size: 1.2rem;
-}
-
-a:hover {
-  color: #174ea6;
 }
 
 figure {
@@ -81,7 +90,7 @@ figcaption {
     font-size: 1.8rem;
   }
 
-  a {
+  ul.index a {
     font-size: 1.1rem;
   }
 }
